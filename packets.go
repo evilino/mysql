@@ -472,7 +472,7 @@ func (mc *mysqlConn) readAuthResult() ([]byte, string, error) {
 	case iAuthMoreData:
 		return data[1:], "", err
 
-	case iEOF:
+	case iEOF: // AuthSwitchRequest
 		if len(data) > 1 {
 			pluginEndIndex := bytes.IndexByte(data, 0x00)
 			plugin := string(data[1:pluginEndIndex])
