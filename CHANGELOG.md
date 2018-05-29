@@ -1,4 +1,4 @@
-## Version 1.4 (2018-05-28)
+## Version 1.4 (2018-05-30)
 
 Changes:
 
@@ -32,7 +32,7 @@ New Features:
 
 Bugfixes:
 
- - Use the DSN hostename as TLS default ServerNname if `tls=true` (#564, #718)
+ - Use the DSN hostname as TLS default ServerName if `tls=true` (#564, #718)
  - Fixed LOAD LOCAL DATA INFILE for empty files (#590)
  - Removed columns definition cache since it sometimes cached invalid data (#592)
  - Don't mutate registered TLS configs (#600)
